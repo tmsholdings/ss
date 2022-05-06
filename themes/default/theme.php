@@ -146,7 +146,7 @@ function nv_site_theme($contents, $full = true)
         'as' => 'font',
         // File NukeVietIcons.woff2 được tải từ style.css,
         // nên đường dẫn đến thư mục của style.css thế nào thì của NukeVietIcons.woff2 như thế
-        'href' => NV_STATIC_URL . 'themes/default/fonts/NukeVietIcons.woff2',
+        'href' => ASSETS_STATIC_URL . '/fonts/NukeVietIcons.woff2',
         'type' => 'font/woff2',
         'crossorigin' => true
     ];
@@ -160,7 +160,7 @@ function nv_site_theme($contents, $full = true)
     if ($global_config['current_theme_type'] == 'r') {
         $html_links[] = [
             'rel' => 'stylesheet',
-            'href' => NV_STATIC_URL . 'themes/' . $global_config['module_theme'] . '/css/bootstrap.min.css'
+            'href' => ASSETS_STATIC_URL . '/css/bootstrap.min.css'
         ];
         $html_links[] = [
             'rel' => 'stylesheet',
@@ -173,7 +173,7 @@ function nv_site_theme($contents, $full = true)
     } else {
         $html_links[] = [
             'rel' => 'stylesheet',
-            'href' => NV_STATIC_URL . 'themes/' . $global_config['module_theme'] . '/css/bootstrap.non-responsive.css'
+            'href' => ASSETS_STATIC_URL . '/css/bootstrap.non-responsive.css'
         ];
         $html_links[] = [
             'rel' => 'stylesheet',
@@ -181,13 +181,13 @@ function nv_site_theme($contents, $full = true)
         ];
         $html_links[] = [
             'rel' => 'stylesheet',
-            'href' => NV_STATIC_URL . 'themes/' . $global_config['module_theme'] . '/css/style.non-responsive.css'
+            'href' => ASSETS_STATIC_URL . '/css/style.non-responsive.css'
         ];
     }
     if (defined('NV_IS_ADMIN') and $full) {
         $html_links[] = [
             'rel' => 'stylesheet',
-            'href' => NV_STATIC_URL . 'themes/' . $global_config['module_theme'] . '/css/admin.css'
+            'href' => ASSETS_STATIC_URL . 'themes/' . $global_config['module_theme'] . '/css/admin.css'
         ];
     }
     $html_links = array_merge_recursive($html_links, nv_html_links(false));
