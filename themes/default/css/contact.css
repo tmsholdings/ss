@@ -1,0 +1,59 @@
+/**
+ * TMS Content Management System
+ * @version 4.x
+ * @author Tập Đoàn TMS Holdings <contact@tms.vn>
+ * @copyright (C) 2009-2021 Tập Đoàn TMS Holdings. All rights reserved
+ * @license GNU/GPL version 2 or any later version
+ * @see https://tms.vn
+ */
+
+#contactButton {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    max-height: 100%;
+    width: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+
+#contactButton .panel {
+    margin-bottom: 0;
+    width: 100%;
+    color: #333;
+    display: none;
+}
+
+#contactButton .ctb {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#contactButton .ctb,
+#contactButton .panel {
+    border-radius: 5px 5px 0 0;
+}
+
+#contactButton .ctb em {
+    margin-right: 3px;
+    font-size: 1.6em;
+    vertical-align: middle;
+}
+
+@media (max-width: 1199px) {
+    #contactButton .ctb {
+        right: 70px;
+    }
+}
+
+@media (max-width: 499px) {
+    #contactButton {
+        right: auto;
+        left: 0;
+        width: 90%;
+    }
+}

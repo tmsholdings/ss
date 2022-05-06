@@ -1,0 +1,42 @@
+/**
+ * TMS Content Management System
+ * @version 4.x
+ * @author Tập Đoàn TMS Holdings <contact@tms.vn>
+ * @copyright (C) 2009-2021 Tập Đoàn TMS Holdings. All rights reserved
+ * @license GNU/GPL version 2 or any later version
+ * @see https://tms.vn
+ */
+
+.invalid {
+    color: #f00;
+    font: 800 11px Tahoma, Arial, Verdana, sans-serif;
+}
+
+.newVesionInfo {
+    color: #ef3805;
+    font: 800 12px Tahoma, Arial, Verdana, sans-serif;
+}
+
+.newVesionMess {
+    margin: 10px 0;
+}
+
+.ninfo {
+    cursor: pointer;
+}
+
+.wttooltip {
+    cursor: pointer;
+    display: none;
+}
+
+.error {
+    color: #ef3805;
+    font: 800 12px Tahoma, Arial, Verdana, sans-serif;
+}
+
+.myLink,
+.myLink span {
+    color: #ff0000;
+    text-decoration: none;
+}

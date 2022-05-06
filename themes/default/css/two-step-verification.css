@@ -1,0 +1,41 @@
+/**
+ * TMS Content Management System
+ * @version 4.x
+ * @author Tập Đoàn TMS Holdings <contact@tms.vn>
+ * @copyright (C) 2009-2021 Tập Đoàn TMS Holdings. All rights reserved
+ * @license GNU/GPL version 2 or any later version
+ * @see https://tms.vn
+ */
+
+/* Login-box */
+.login-box {
+    width: 400px;
+}
+
+@media (max-width: 399px) {
+    .login-box {
+        width: 100%;
+    }
+}
+
+.twostep-qrimg {
+    max-width: 100%;
+}
+
+.twostep-manualsecretkey {
+    width: 400px;
+}
+
+@media (max-width: 399px) {
+    .twostep-manualsecretkey {
+        width: 100%;
+    }
+}
+
+.recovery-code {
+    padding: 7px 0;
+}
+
+.recovery-code span {
+    font-family: 'Courier New';
+}
