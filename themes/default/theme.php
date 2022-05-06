@@ -187,7 +187,7 @@ function nv_site_theme($contents, $full = true)
     if (defined('NV_IS_ADMIN') and $full) {
         $html_links[] = [
             'rel' => 'stylesheet',
-            'href' => ASSETS_STATIC_URL . 'themes/' . $global_config['module_theme'] . '/css/admin.css'
+            'href' => ASSETS_STATIC_URL . '/css/admin.css'
         ];
     }
     $html_links = array_merge_recursive($html_links, nv_html_links(false));
